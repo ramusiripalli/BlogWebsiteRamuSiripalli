@@ -16,7 +16,7 @@ export const BlogCard = ({
     publishedDate
 } : BlogCardProps) => {
     return <Link to={`/blog/${id}`}>
-    <div className="border-b border-slate-400 pb-4 w-screen max-w-screen-md cursor-pointer">
+    <div className="border-b border-slate-400 pb-4 w-screen max-w-screen-md cursor-pointer pt-5">
         <div className="flex">
             <div className="flex justify-center flex-col">
             <Avatar name={authorName}/>
@@ -41,7 +41,7 @@ export const BlogCard = ({
     </Link>
 }
 
-function Circle(){
+export function Circle(){
     return <div className="h-1 w-1 rounded-full bg-slate-400">
 
     </div>
