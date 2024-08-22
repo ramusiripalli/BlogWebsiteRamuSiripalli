@@ -15,7 +15,7 @@ function getDate() {
   
 export const Blogs = () => {
     const { loading, blogs } = useBlogs();
-    const [currentDate, setCurrentDate] = useState(getDate());
+    const [currentDate] = useState(getDate());
 
     if (loading) {
         return <div>
